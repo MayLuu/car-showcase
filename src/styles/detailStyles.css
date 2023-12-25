@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+}
+.title{
+    font-size: xx-large;
+    padding: 20px 0;
+}
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+/* detail page */
+
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr  1fr;
+    gap: 50px;
+    text-align: start;
+}
+.detail .image img{
+    width: 100%;
+    
+}
+.detail .image{
+    
+    position: relative;
+}
+.detail .image::before{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    content: '';
+    background-color: #94817733;
+    z-index: -1;
+    border-radius: 190px 100px 170px 180px;
+    left: calc(50% - 150px);
+    top: 50px;
+
+
+}
+.detail .name{
+    font-size: xx-large;
+    padding: 40px 0 0 0;
+    margin: 0 0 10px 0;
+    text-align: end;
+}
+.detail .price{
+    font-weight: bold;
+    font-size: medium;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.detail .buttons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.detail .buttons button{
+    background-color: #eee;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-size: medium;
+}
+.detail .buttons svg{
+    width: 15px;
+}
+.detail .buttons span{
+    background-color: #555454;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.detail .buttons button:nth-child(2){
+    background-color: #2F2F2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    box-shadow: 0 10px 20px #2F2F2F77;
+}
+.detail .description{
+    font-weight: 300;
+    text-align: justify;
+    max-lines: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info .tabs .tab-list {
+    /* background-color: #2F2F2F; */
+    color: white;
+display: flex;
+justify-content: center;
+margin: 1em 0;
+/* border: 2px solid black; */
+}
+.info .tabs .tab-list .tab{
+    cursor: pointer;
+    color: black;
+    padding: 1em 3em;
+
+}
+
+.tabs .tools ul{
+    list-style-type: circle; /* Remove bullets */
+
+}
+.container .info{
+    /* background-color: #EEEEE6; */
+    font-weight: 300;
+    text-align: justify;
+    max-lines: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .info .box{
+    /* background-color: antiquewhite; */
+}
+
+.container .info .box .title{
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #2F2F2F;
+    color: white;
+    height: 1.4em;
+    display: flex;
+    align-items: center;
+    padding-left: 0.2em;
+
+}
+.container .info .box .description {
+    padding: 1.5em 0.2em 3em 0.2em;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row{
+    width: 50%;
+/* background-color: #555454; */
+display: flex;
+/* width: 50%; */
+justify-content: space-between;
+padding: 1em 0.5em;
+
+
+}
+/* // ipad */
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .detail{
+        grid-template-columns:  40% 1fr;
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .detail{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    .detail .image img{
+        width: unset;
+        height: 40vh;
+    } 
+    .detail .name{
+        font-size: x-large;
+        margin: 0;
+
+    }
+    .detail .buttons button{
+        font-size: small;
+    }
+    .detail .buttons{
+        justify-content: center;
+    }
+}
+
+.carousel {
+    position: relative;
+    /* box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64); */
+    margin: 26px 0;
+    /* background-color: #2F2F2F; */
+    height: 20em;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 20em;
+
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: 20em;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 60px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: red;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
