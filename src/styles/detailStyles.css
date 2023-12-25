@@ -5,6 +5,9 @@ a{
     color: unset;
     text-decoration: none;
 }
+ li{
+    padding: 0.2em 0;
+ }
 .container{
     width: 900px;
     margin: auto;
@@ -114,7 +117,7 @@ a{
     box-shadow: 0 10px 20px #2F2F2F77;
 }
 .detail .description{
-    font-weight: 300;
+    /* font-weight: 300; */
     text-align: justify;
     max-lines: 4;
     overflow: hidden;
@@ -182,6 +185,10 @@ padding: 1em 0.5em;
 
 
 }
+.row h5{
+    font-weight: bold;
+
+}
 /* // ipad */
 @media only screen and (max-width: 992px) {
     .listProduct{
@@ -217,7 +224,18 @@ padding: 1em 0.5em;
     .detail .buttons{
         justify-content: center;
     }
+
+    .column{
+        /* background-color: #2F2F2F; */
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .row{
+        width: 100%;
+    }
 }
+
 
 .carousel {
     position: relative;

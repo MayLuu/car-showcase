@@ -21,7 +21,6 @@ export const Header = () => {
                     <div className="dropdown-content">
                         {CATEGORIES.map((cate) => {
                             var link = '/' + cate.name.replace(' ', '-');
-                            console.log(link)
 
                             return <div key={cate.id}>
                                 <a href={cate.name}>{cate.name}</a>

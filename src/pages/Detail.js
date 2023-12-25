@@ -6,6 +6,7 @@ import { DATA } from "../data"
 
 
 import React from "react";
+import uuid from "react-uuid";
 export const DetailPage = () => {
     const params = useParams()
     const item = DATA.filter(i => i.name.replace(' ', '-') === params.id)[0]
@@ -85,7 +86,7 @@ export const DetailPage = () => {
                     </div>
                     <div className="box">
                         <div className="title">Thông số kỹ thuật</div>
-                        <div className="description">
+                        <div className="description number-des">
 
                             <div className="column">
                                 <div className="row">
@@ -125,8 +126,8 @@ export const DetailPage = () => {
                                 <div className="column">
 
                                     <ul>
-                                        {item.description.map(des => {
-                                            return <li>{des}</li>
+                                        {item.description.map((des, index) => {
+                                            return <li key={uuid()}>{index + 1}. {des}</li>
                                         })}
                                     </ul>
                                 </div>
