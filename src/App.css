@@ -662,7 +662,9 @@ color:var(--text-color);
   @media (max-width: 607px) {
     .footer-container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+      justify-items: center;
+
     }
   }
   @media (max-width: 360px) {
@@ -671,6 +673,7 @@ color:var(--text-color);
     }
     .home {
       min-height: 500px;
+      background-color: #818181;
     }
     .home-text h1 {
       font-size: 2rem;

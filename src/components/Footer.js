@@ -6,7 +6,7 @@ function Footer() {
             <section className="footer">
                 <div className="footer-container container">
                     <div className="footer-box">
-                        <a href="/" className="logo">Mercedes HCM</a>
+                        <a href="/" className="logo">Mercedes HCM   </a>
                         <div className="social">
                             <a href="https://www.facebook.com/hondaoto.3thang2"><i className="bx bxl-facebook"></i></a>
                             <a href="https://www.facebook.com/hondaoto.3thang2"><i className="bx bxl-twitter"></i></a>
