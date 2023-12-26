@@ -8,6 +8,7 @@ import { CarListPage } from './pages/CarList';
 import { ContactUs } from './pages/Contact';
 import { PriceTable } from './pages/PriceTable';
 import { InstallmentPage } from './pages/Installment';
+import { AllList } from './pages/AllList';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Routes >
         <Route exact path="/" element={<Home />} />
         <Route path="/:name/:id" element={<DetailPage />} />
+        <Route path="/dong-xe" element={<AllList />} />
         <Route path="/:name" element={<CarListPage />} />
         <Route path="/lien-he" element={<ContactUs />} />
         <Route path="/bang-gia" element={<PriceTable />} />

@@ -258,6 +258,7 @@ color:var(--text-color);
     padding-left: 130px;
     display: flex;
     align-items: center;
+    text-align: justify;
 }
 
 .home-text .box h1{
@@ -636,7 +637,8 @@ table {
     }
     .home-text .box img{display: none;}
     .home-text {
-      padding-left: 2rem;
+      padding: 2rem;
+    
     }
     .home-text h1 {
       font-size: 2.1rem;

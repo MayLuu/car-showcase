@@ -17,7 +17,7 @@ export const Header = () => {
             <ul className="navbar">
                 <li><a href="/">Trang chủ</a></li>
                 <li className="dropdown">
-                    <a href="/" >Xe Mercedes <i></i></a>
+                    <a href="/dong-xe" >Xe Mercedes<i></i></a>
                     <div className="dropdown-content">
                         {CATEGORIES.map((cate) => {
                             var link = '/' + cate.name.replace(' ', '-');
