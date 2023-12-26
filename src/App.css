@@ -410,6 +410,7 @@ color:var(--text-color);
     background: #f6f6f6;
     border-radius: 0.5rem;
 
+
 }
 
 .parts-container .box img{
@@ -425,19 +426,24 @@ color:var(--text-color);
     font-weight: 600;
 }
 
-.parts-container .box span{
+.parts-container .box h5{
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--main-color);
 }
 
 .parts-container .box .bx{
+    display: block;
     color: var(--main-color);
-    margin: 0.8rem 0;
+    margin: 0.4rem 0;
+ 
 }
 
 .parts-container .box .btn{
     max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
@@ -447,7 +453,7 @@ color:var(--text-color);
     position: absolute;
     bottom: 1.8rem;
     right: 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--text-color);
 }
 
