@@ -8,6 +8,7 @@ import { DATA } from "../data"
 import React from "react";
 import uuid from "react-uuid";
 import { Carousel } from "../components/Carousel";
+import { Card } from "../components/Card";
 
 export const DetailPage = () => {
     const params = useParams()
@@ -104,16 +105,30 @@ export const DetailPage = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="title">Cùng dòng với {item.name}</div>
+                <div className="listProduct">
+                    <div>
+                        <section className="parts" id="parts">
+                            {/* <!--parts container--> */}
+                            <div className="parts-container container">
+                                {/* <!--Box 1--> */}
+                                {
+                                    DATA.map(data => {
+                                        return data.category === item.category && data.name !== item.name ? <div key={uuid()} className="box flex-2">
+                                            <Card item={data} />
+                                        </div> : <></>
+                                    })
+                                }
 
+                            </div>
+                        </section>
                     </div>
 
-
-
                 </div>
-                <div className="title"></div>
-                <div className="listProduct"></div>
-            </div >
+            </div>
 
-        </section >
+        </section>
     )
 }

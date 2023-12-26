@@ -221,7 +221,7 @@ padding: 1em 0.5em;
         grid-template-columns: 1fr;
     }
     .detail .image img{
-        width: unset;
+        /* width: unset; */
         height: 40vh;
     } 
     .detail .name{
