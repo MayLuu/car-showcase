@@ -21,7 +21,7 @@ export const DetailPage = () => {
                 <div className="title">{item.name}</div>
                 <div className="detail">
                     <div className="image">
-                        <Carousel data={item.imageUrl} />
+                        <Carousel data={item.imageUrl.reverse()} />
 
                     </div>
                     <div className="content">
@@ -66,7 +66,7 @@ export const DetailPage = () => {
                                 </div>
                                 <div className="row">
                                     <h5>Chiều cao</h5>
-                                    <p>{item.size[2]}</p>
+                                    <p>{item.size[2]} mm</p>
                                 </div>
                                 <div className="row">
                                     <h5>Năm mô hình</h5>

@@ -22,7 +22,9 @@ color: #2a2929
 .bold{
     font-weight: bold;
 }
-
+.section-body{
+    margin: 3em;
+}
 /*Variables*/
 
 :root{

@@ -166,8 +166,8 @@ margin: 1em 0;
 }
 
 .container .info .box .title{
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1.1em;
+    font-weight: 500;
     background-color: #2F2F2F;
     color: white;
     height: 1.4em;
@@ -280,7 +280,7 @@ padding: 1em 0.5em;
     display: block;
     height: 20em;
     max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .carousel-control {

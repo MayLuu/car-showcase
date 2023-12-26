@@ -1,17 +1,23 @@
 import { useParams } from "react-router-dom"
-import { DATA } from "../data"
+import { CATEGORIES, DATA } from "../data"
 import uuid from 'react-uuid';
 import { Card } from "../components/Card";
+import { NotFound } from "./NotFound";
 
 
 export const CarListPage = () => {
     const params = useParams()
+    let existedCate = CATEGORIES.filter(cate => cate.name === params.name);
+    console.log(existedCate.length)
+    if (existedCate.length === 0) {
+        return <NotFound />
+    }
     const actualCate = params?.name.replace('-', ' ')
     let list = DATA.filter(i => i.category === actualCate) ?? [];
-    console.log(list)
+
     return (
         <div>
-            <section className="parts" id="parts">
+            <section className="parts section-body" id="parts">
                 <div className="heading">
                     <span>Được mua nhiều</span>
                     <h2>Những dòng xe bán chạy nhất hãng</h2>

@@ -48,8 +48,8 @@
   
   .indicator {
     background-color: var(--main-color);
-    height: 1rem;
-    width: 1rem;
+    height: 0.7rem;
+    width: 0.7rem;
     border-radius: 100%;
     border: none;
     outline: none;

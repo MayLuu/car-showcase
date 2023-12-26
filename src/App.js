@@ -5,7 +5,6 @@ import { Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { DetailPage } from './pages/Detail';
 import { CarListPage } from './pages/CarList';
-import { Breadcrumbs } from './components/Breadcrumb';
 import { ContactUs } from './pages/Contact';
 import { PriceTable } from './pages/PriceTable';
 import { InstallmentPage } from './pages/Installment';
@@ -30,6 +29,8 @@ function App() {
         <Route path="/lien-he" element={<ContactUs />} />
         <Route path="/bang-gia" element={<PriceTable />} />
         <Route path="/tra-gop" element={<InstallmentPage />} />
+        <Route path="*" element={<Home />} />
+
       </Routes>
       <Footer />
     </div>

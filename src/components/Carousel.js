@@ -23,6 +23,7 @@ export const Carousel = ({ data }) => {
                         src={item}
                         alt='hinh anh xe'
                         key={idx}
+                        style={{ objectFit: "contain" }}
                         className={slide === idx ? "slide" : "slide slide-hidden"}
                     />
                 );
