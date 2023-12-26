@@ -19,9 +19,10 @@ export const CarListPage = () => {
         <div>
             <section className="parts section-body" id="parts">
                 <div className="heading">
-                    <span>Được mua nhiều</span>
-                    <h2>Những dòng xe bán chạy nhất hãng</h2>
-                    <p>
+                    {/* <span><strong>Dòng xe {actualCate}</strong></span> */}
+                    <h1>Mercedes-Benz {actualCate}</h1>
+                    <span className="bold">Những dòng xe {actualCate} bán chạy</span>
+                    <p style={{ padding: "1em 30em" }}>
                         Khách hàng liên hệ trực tiếp với MErcedes sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng cùng gói quà tặng bảo hiểm. phụ kiện cao cấp.
                     </p>
                 </div>
