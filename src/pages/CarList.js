@@ -6,7 +6,9 @@ import { Card } from "../components/Card";
 
 export const CarListPage = () => {
     const params = useParams()
-    const actualCate = params.name.replace('-', ' ')
+    const actualCate = params?.name.replace('-', ' ')
+    let list = DATA.filter(i => i.category === actualCate) ?? [];
+    console.log(list)
     return (
         <div>
             <section className="parts" id="parts">
@@ -21,15 +23,12 @@ export const CarListPage = () => {
                 <div className="parts-container container">
                     {/* <!--Box 1--> */}
                     {
-                        DATA.map(item => {
+                        list == [] ? <div>Dữ liệu đang được cập nhật</div> : DATA.map(item => {
                             return item.category === actualCate ? <div key={uuid()} className="box">
                                 <Card item={item} />
                             </div> : <></>
                         })
                     }
-
-
-
 
                 </div>
             </section>

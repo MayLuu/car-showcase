@@ -7,10 +7,11 @@ import { DATA } from "../data"
 
 import React from "react";
 import uuid from "react-uuid";
+import { Carousel } from "../components/Carousel";
+
 export const DetailPage = () => {
     const params = useParams()
     const item = DATA.filter(i => i.name.replace(' ', '-') === params.id)[0]
-
 
 
 
@@ -19,43 +20,9 @@ export const DetailPage = () => {
             <div className="container">
                 <div className="title">{item.name}</div>
                 <div className="detail">
-
                     <div className="image">
-                        {/* <img src={item.imageUrl[0]} alt="" /> */}
-                        <div className="carousel">
-                            <div className="carousel-inner">
-                                <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="true" checked="checked" />
-                                <div className="carousel-item">
-                                    <img src={item.imageUrl[0]} alt="xe" />
-                                </div>
-                                <input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="true" />
-                                <div className="carousel-item">
-                                    <img src={item.imageUrl[1]} alt="xe" />
-                                </div>
-                                <input className="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="true" />
-                                <div className="carousel-item">
-                                    <img src={item.imageUrl[2]} alt="xe" />
-                                </div>
-                                <label for="carousel-3" className="carousel-control prev control-1">‹</label>
-                                <label for="carousel-2" className="carousel-control next control-1">›</label>
-                                <label for="carousel-1" className="carousel-control prev control-2">‹</label>
-                                <label for="carousel-3" className="carousel-control next control-2">›</label>
-                                <label for="carousel-2" className="carousel-control prev control-3">‹</label>
-                                <label for="carousel-1" className="carousel-control next control-3">›</label>
+                        <Carousel data={item.imageUrl} />
 
-                                <ol className="carousel-indicators">
-                                    <li>
-                                        <label for="carousel-1" className="carousel-bullet">•</label>
-                                    </li>
-                                    <li>
-                                        <label for="carousel-2" className="carousel-bullet">•</label>
-                                    </li>
-                                    <li>
-                                        <label for="carousel-3" className="carousel-bullet">•</label>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
                     </div>
                     <div className="content">
                         <h1 className="name">{item.name}</h1>

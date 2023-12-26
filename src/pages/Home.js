@@ -87,7 +87,7 @@ export const Home = () => {
                     {/* <!--Box 1--> */}
 
                     {
-                        DATA.slice(0, 3).map(item => {
+                        DATA.slice(0, 6).map(item => {
                             return <div key={uuid()} className="box">
                                 <Card item={item} />
 
