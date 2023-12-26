@@ -71,9 +71,9 @@ export const DetailPage = () => {
                             </button>
                         </div>
                         <div className="description">
-                            Dòng xe: {item.category} <br />
-                            Nhiên liệu: {item.material} <br />
-                            Tốc độ: {item.speed}
+                            <strong>Dòng xe</strong>: {item.category} <br />
+                            <strong>Nhiên liệu</strong>: {item.material} <br />
+                            <strong>Tốc độ tối đa</strong>: {item.speed}
                         </div>
                     </div>
                 </div>
@@ -96,6 +96,10 @@ export const DetailPage = () => {
                                 <div className="row">
                                     <h5>Chiều rộng</h5>
                                     <p>{item.size[1]} mm</p>
+                                </div>
+                                <div className="row">
+                                    <h5>Chiều cao</h5>
+                                    <p>{item.size[2]}</p>
                                 </div>
                                 <div className="row">
                                     <h5>Năm mô hình</h5>

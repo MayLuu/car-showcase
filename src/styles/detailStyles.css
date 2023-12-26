@@ -1,3 +1,9 @@
+:root{
+    --main-color:#d90429;
+    --text-color:#020102;
+    --bg-color:#fff;
+}
+
 body{
     margin: 0;
 }
@@ -40,6 +46,7 @@ a{
 .listProduct .item .price{
     letter-spacing: 7px;
     font-size: small;
+    color: var(--main-color);
 }
 /* detail page */
 
@@ -49,6 +56,7 @@ a{
     grid-template-columns: 2fr  1fr;
     gap: 50px;
     text-align: start;
+
 }
 .detail .image img{
     width: 100%;
@@ -75,13 +83,16 @@ a{
     font-size: xx-large;
     padding: 40px 0 0 0;
     margin: 0 0 10px 0;
-    text-align: end;
+    text-align: start;
+
 }
 .detail .price{
     font-weight: bold;
     font-size: medium;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
+    color: var(--main-color);
+
 }
 .detail .buttons{
     display: flex;
@@ -93,7 +104,7 @@ a{
     border: none;
     padding: 15px 20px;
     border-radius: 20px;
-    font-size: medium;
+    font-size: small;
 }
 .detail .buttons svg{
     width: 15px;
@@ -342,7 +353,7 @@ padding: 1em 0.5em;
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: red;
+    color: var(--main-color);
 }
 
 #title {
