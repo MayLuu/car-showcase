@@ -12,8 +12,8 @@ export const PriceTable = () => {
             <section className='parts'>
                 <div className='heading'>
                     {/* <span>Được mua nhiều</span> */}
-                    <h2>Bảng giá xe</h2>
-                    <p>
+                    <h1 className='bold'>Bảng giá xe</h1>
+                    <p style={{}}>
                         Khách hàng liên hệ trực tiếp với MErcedes sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng cùng gói quà tặng bảo hiểm. phụ kiện cao cấp.
                     </p></div>
 

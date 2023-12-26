@@ -23,8 +23,9 @@ color: #2a2929
     font-weight: bold;
 }
 .section-body{
-    margin: 3em;
+    margin: 3em 0;
 }
+
 /*Variables*/
 
 :root{
