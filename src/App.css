@@ -22,6 +22,7 @@ color: #2a2929
 .bold{
     font-weight: bold;
 }
+
 /*Variables*/
 
 :root{
@@ -395,7 +396,9 @@ color:var(--text-color);
 }
 
 .parts-container .box{
-    flex: 1 1 17rem;
+    flex: 1 1 15rem;
+    flex: auto auto auto;
+    flex-wrap: wrap;
     position: relative;
     padding: 20px;
     display: flex;
@@ -515,12 +518,15 @@ color:var(--text-color);
 .footer-container .logo{
     color: var(--bg-color);
     margin-bottom: 1rem;
+    
+    
 
 }
 
 .footer-container .footer-box{
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -535,6 +541,11 @@ color:var(--text-color);
     margin-right: 1rem;
 }
 
+.social a i{
+    color: var(--bg-color);
+    opacity: 0.5;
+}
+
 
 .social a:hover{
     color: var(--main-color);
@@ -545,6 +556,8 @@ color:var(--text-color);
     font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 1rem;
+    color: var(--bg-color);
+
 
 }
 
@@ -564,6 +577,10 @@ color:var(--text-color);
 
 .footer-box a:hover{
     color: var(--main-color);
+}
+
+.footer-box .logo{
+    color: #dddddd;
 }
 
 
@@ -711,6 +728,5 @@ table {
     }
   }
   
-
 
 

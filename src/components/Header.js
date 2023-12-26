@@ -23,7 +23,7 @@ export const Header = () => {
                             var link = '/' + cate.name.replace(' ', '-');
 
                             return <div key={cate.id}>
-                                <a href={cate.name}>{cate.name}</a>
+                                <a href={link}>{cate.name}</a>
                             </div>
 
                         })}
@@ -32,7 +32,7 @@ export const Header = () => {
                 </li>
                 <li><a href="/bang-gia">Bảng giá</a></li>
                 <li><a href="/tra-gop">Trả góp</a></li>
-                <li><a href="#parts">Tin tức</a></li>
+                <li><a href="/">Tin tức</a></li>
                 <li><a href="/lien-he">Liên hệ</a></li>
             </ul>
             <i className="bx bx-search" id="search-icon"></i>

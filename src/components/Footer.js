@@ -18,23 +18,24 @@ function Footer() {
                         <h3>Trang</h3>
                         <a href="/">Trang chủ</a>
                         <a href="/">Xe mercedes</a>
-                        <a href="/">Về chúng tôi</a>
-                        <a href="/">Liên hệ</a>
+                        <a href="/bang-gia">Bảng giá</a>
+                        <a href="/lien-he">Liên hệ</a>
                     </div>
 
                     <div className="footer-box">
                         <h3>Dòng xe</h3>
                         {CATEGORIES.map(cate => {
-                            return <a href="/">{cate.name}</a>
+                            var link = "/" + cate.name;
+                            return <a href={link}>{cate.name}</a>
 
                         })}
                     </div>
 
                     <div className="footer-box">
                         <h3>Liên hệ</h3>
-                        <p>Hotline: 090 638 38 77</p>
+                        <p>Hotline: 0906 38 38 77</p>
                         <p>Email: honda.oto.sg.3thang2@gmail.com</p>
-                        <p>Website: mercedes-vietnamstar.com.vn</p>
+                        <a target="_blank" href="https://mercedes-vietnamstar.com.vn">Website: mercedes-vietnamstar.com.vn</a>
                     </div>
                 </div>
             </section >

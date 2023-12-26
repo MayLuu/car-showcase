@@ -20,11 +20,11 @@ export const CarListPage = () => {
                     </p>
                 </div>
                 {/* <!--parts container--> */}
-                <div className="parts-container container">
+                <div className="parts-container container ">
                     {/* <!--Box 1--> */}
                     {
                         list == [] ? <div>Dữ liệu đang được cập nhật</div> : DATA.map(item => {
-                            return item.category === actualCate ? <div key={uuid()} className="box">
+                            return item.category === actualCate ? <div key={uuid()} className="box flex-2">
                                 <Card item={item} />
                             </div> : <></>
                         })
