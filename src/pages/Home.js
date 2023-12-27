@@ -30,7 +30,7 @@ export const Home = () => {
                     <span style={{ fontSize: "1.2em" }}>Các dòng xe</span>
                     <h2 className="bold">Đầy đủ các dòng xe sang, hiện đại</h2>
                     <p>
-                        Chúng tôi luôn đặt mong muốn của quý Khách lên hàng đầu
+                        Chúng tôi luôn đặt mong muốn của quý khách lên hàng đầu
                     </p>
                 </div>
                 {/* <!--Cars container--> */}

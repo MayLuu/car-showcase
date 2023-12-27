@@ -2,7 +2,7 @@ import React from "react";
 
 export const Card = ({ item }) => {
 
-    var link = item.category.replace(' ', '-') + '/' + item.name.replace(' ', '-')
+    var link = "/" + item.category.replace(' ', '-') + '/' + item.name.replace(' ', '-')
     return (
         <a href={link}>
             <img src={item.imageUrl[0]} alt="" />
