@@ -7,7 +7,7 @@ import { DetailPage } from './pages/Detail';
 import { CarListPage } from './pages/CarList';
 import { ContactUs } from './pages/Contact';
 import { PriceTable } from './pages/PriceTable';
-import { InstallmentPage } from './pages/Installment';
+import { NewsPage } from './pages/NewsPage';
 import { AllList } from './pages/AllList';
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
         <Route path="/dong-xe" element={<AllList />} />
         <Route path="/:name" element={<CarListPage />} />
         <Route path="/lien-he" element={<ContactUs />} />
+        <Route path="/tin-tuc" element={<NewsPage />} />
         <Route path="/bang-gia" element={<PriceTable />} />
-        <Route path="/tra-gop" element={<InstallmentPage />} />
         <Route path="*" element={<Home />} />
 
       </Routes>

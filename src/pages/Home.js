@@ -1,5 +1,5 @@
 import uuid from "react-uuid";
-import { CATEGORIES, DATA } from "../data";
+import { CATEGORIES, DATA, NEWS } from "../data";
 import { Card } from "../components/Card";
 
 export const Home = () => {
@@ -27,8 +27,8 @@ export const Home = () => {
             {/* <!--cars section--> */}
             <section className="cars" id="cars">
                 <div className="heading">
-                    <span>Các dòng xe</span>
-                    <h2>Đầy đủ các dòng xe sang, hiện đại</h2>
+                    <span style={{ fontSize: "1.2em" }}>Các dòng xe</span>
+                    <h2 className="bold">Đầy đủ các dòng xe sang, hiện đại</h2>
                     <p>
                         Chúng tôi luôn đặt mong muốn của quý Khách lên hàng đầu
                     </p>
@@ -52,11 +52,11 @@ export const Home = () => {
             <section>
                 <section className="about container" id="about">
                     <div className="about-img">
-                        <img src="img/about.png" alt="" />
+                        <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/328513211_515078427179217_3835672575713190716_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=CpJPiYIgHIgAX_eqFFM&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAzxEhAQQIvbsbRzKCPvsnM-Nd7ECu5ORDOWDdPdpJs-Q&oe=658FB25C" alt="" />
                     </div>
                     <div className="about-text">
-                        <span>Về chúng tôi</span>
-                        <h2>
+                        <span style={{ fontSize: "1.2em" }}>Về chúng tôi</span>
+                        <h2 className="bold">
                             Chất lượng cao <br />
                             Giá cả hợp lý
                         </h2>
@@ -64,9 +64,6 @@ export const Home = () => {
                             Dịch vụ hỗ trợ 24h (Star Assist 24h) <br />
                             Mua xe & lái thử xe: thứ Hai-thứ Bảy – 8h-22h  <br />
                             Dịch vụ hậu mãi: thứ Hai-thứ Sáu – 8h-17h
-
-
-
                         </p>
                         {/* <!--About Button--> */}
                         <a href="/" className="btn">Tìm hiểu thêm</a>
@@ -76,8 +73,8 @@ export const Home = () => {
             {/* <!--parts section--> */}
             <section className="parts" id="parts">
                 <div className="heading">
-                    <span>Được mua nhiều</span>
-                    <h2>Những dòng xe bán chạy nhất hãng</h2>
+                    <span style={{ fontSize: "1.2em" }} >Được mua nhiều</span>
+                    <h2 className="bold">Những dòng xe bán chạy nhất hãng</h2>
                     <p>
                         Khách hàng liên hệ trực tiếp với MErcedes sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng cùng gói quà tặng bảo hiểm. phụ kiện cao cấp.
                     </p>
@@ -103,60 +100,30 @@ export const Home = () => {
             {/* <!--Blog Container--> */}
             <section className="blog" id="blog">
                 <div className="heading">
-                    <span>Blog & News</span>
-                    <h2>Our Blog Content</h2>
+                    <span style={{ fontSize: "1.2em" }}>Tin tức</span>
+                    <h2 className="bold">Những nội dung mới cập nhật gần đây</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                        fugit hic molestias numquam voluptate, dolores sit dolorem quisquam
-                        maiores.
+                        Theo dõi chúng tôi để cập nhật nhwnxng tin tức mới nhất về dòng xe Mercedes Benz cùng những ưu đãi khác
                     </p>
                 </div>
                 {/* <!--Blog Container--> */}
                 <div className="blog-container container">
                     {/* <!--Box 1--> */}
-                    <div className="box">
-                        <img src="img/car1.jpg" alt="" />
-                        <span>August 21 2022</span>
-                        <h3>How To Get Perfect Car At Low Price</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                            fugit hic molestias numquam voluptate, dolores sit dolorem quisquam
-                            maiores.
-                        </p>
-                        <a href="/" className="blog-btn"
-                        >Read More<i className="bx bx-right-arrow-alt"></i>
-                        </a>
-                    </div>
+                    {
+                        NEWS.slice(0.3).map(item => {
+                            return <div className="box" key={uuid()}>
+                                <img src="https://assets.nationbuilder.com/americanlandscouncil/pages/39/features/original/news.jpg?1469829691" alt="" />
+                                <span>{item.date}</span>
+                                <h3 className="bold" style={{ overflow: "hidden", maxLines: 2, textOverflow: "ellipsis" }}>{item.name}</h3>
+                                <p>
+                                    {item.description[0]}
+                                </p>
+                                <a href="/" className="blog-btn">Xem thêm<i className="bx bx-right-arrow-alt"></i>
+                                </a>
+                            </div>
+                        })
+                    }
 
-                    {/* <!--Box 2--> */}
-                    <div className="box">
-                        <img src="img/car8.jpg" alt="" />
-                        <span>August 21 2022</span>
-                        <h3>How To Get Perfect Car At Low Price</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                            fugit hic molestias numquam voluptate, dolores sit dolorem quisquam
-                            maiores.
-                        </p>
-                        <a href="/" className="blog-btn"
-                        >Read More<i className="bx bx-right-arrow-alt"></i>
-                        </a>
-                    </div>
-
-                    {/* <!--Box 3--> */}
-                    <div className="box">
-                        <img src="img/car3.jpg" alt="" />
-                        <span>August 21 2022</span>
-                        <h3>How To Get Perfect Car At Low Price</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
-                            fugit hic molestias numquam voluptate, dolores sit dolorem quisquam
-                            maiores.
-                        </p>
-                        <a href="/" className="blog-btn"
-                        >Read More<i className="bx bx-right-arrow-alt"></i>
-                        </a>
-                    </div>
                 </div>
             </section>
         </>

@@ -111,9 +111,7 @@ export const DetailPage = () => {
                 <div className="listProduct">
                     <div>
                         <section className="parts" id="parts">
-                            {/* <!--parts container--> */}
                             <div className="parts-container container">
-                                {/* <!--Box 1--> */}
                                 {
                                     DATA.map(data => {
                                         return data.category === item.category && data.name !== item.name ? <div key={uuid()} className="box flex-2">

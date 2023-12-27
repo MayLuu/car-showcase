@@ -1,11 +1,8 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import { DATA } from '../data';
+import uuid from 'react-uuid';
 
 export const PriceTable = () => {
-    const form = useRef();
-
-
 
     return (
         <div style={{ padding: "2em 1em" }}>
@@ -14,7 +11,7 @@ export const PriceTable = () => {
                     {/* <span>Được mua nhiều</span> */}
                     <h1 className='bold'>Bảng giá xe</h1>
                     <p style={{}}>
-                        Khách hàng liên hệ trực tiếp với MErcedes sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng cùng gói quà tặng bảo hiểm. phụ kiện cao cấp.
+                        Khách hàng liên hệ trực tiếp với Mercedes sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng cùng gói quà tặng bảo hiểm, phụ kiện cao cấp.
                     </p></div>
 
                 <div className='parts-container container'>
@@ -23,10 +20,9 @@ export const PriceTable = () => {
                             <th>Dòng xe</th>
                             <th>Giá</th>
                         </tr>
-
                         {
                             DATA.map((item) => {
-                                return <tr>
+                                return <tr key={uuid()}>
                                     <td>{item.name}</td>
                                     <td>{item.price} đ</td>
                                 </tr>

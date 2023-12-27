@@ -31,8 +31,7 @@ export const Header = () => {
                     </div>
                 </li>
                 <li><a href="/bang-gia">Bảng giá</a></li>
-                <li><a href="/tra-gop">Trả góp</a></li>
-                <li><a href="/">Tin tức</a></li>
+                <li><a href="/tin-tuc">Tin tức</a></li>
                 <li><a href="/lien-he">Liên hệ</a></li>
             </ul>
             <i className="bx bx-search" id="search-icon"></i>

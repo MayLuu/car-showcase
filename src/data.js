@@ -420,3 +420,61 @@ export const CATEGORIES = [
         "url": "https://mercedesbenzsaigon.com/wp-content/uploads/2022/06/GLC_300_Coupe.png"
     }
 ]
+
+
+export const NEWS = [
+    {
+        "id": 1,
+        "name": "Mercedes Việt Nam tăng giá xe hàng loạt từ 1/1/2023",
+        "date": "1/1/2023",
+        "description": [
+            "Các dòng E, S, GLC, GLE, GLS… của Mercedes tăng giá đồng loạt từ 2023, mức thấp nhất 50 triệu đồng và cao nhất 380 triệu đồng."
+        ],
+        "image": "https://mercedesbenzsaigon.com/wp-content/uploads/2022/08/xehay-GLB-010822-88.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Showroom Mercedes-Benz sắp khai trương tại OfficeHaus",
+        "date": "11/12/2022",
+        "description": [
+            "Đây sẽ là tòa phức hợp bao gồm văn phòng cho thuê và showroom trưng bày xe với diện tích sàn lớn, ứng dụng nhiều công nghệ hiện đại."
+        ],
+        "image": "https://mercedesbenzsaigon.com/wp-content/uploads/2022/08/xehay-GLB-010822-88.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mercedes EQS - 'S-class chạy điện' giá từ 4,839 tỷ đồng",
+        "date": "1/1/2023",
+        "description": [
+            "EQS mở đầu cho giai đoạn kinh doanh xe điện của Mercedes tại Việt Nam, phiên bản 580 4Matic giá đắt nhất, gần 6 tỷ đồng."
+        ],
+        "image": "https://mercedesbenzsaigon.com/wp-content/uploads/2022/08/xehay-GLB-010822-88.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Mercedes-Benz ra mắt Đại lý Mercedes-Benz Haxaco Cần Thơ",
+        "date": "09/08/2022",
+        "description": [
+            "Với cam kết đi cùng sự phát triển của ngành ô tô trong nước, Mercedes-Benz Việt Nam (MBV) đã không ngừng "
+        ],
+        "image": "https://mercedesbenzsaigon.com/wp-content/uploads/2022/08/xehay-GLB-010822-88.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mercedes-Benz GLB Facelift dự kiến sẽ ra mắt vào năm 2023 – Kiểu dáng có nhiều thay đổi",
+        "date": "09/08/2022",
+        "description": [
+            "Nhưng thay đổi về thiết kế của Mercedes-Benz GLB Facelift chủ yếu sẽ tập trung vào phần đầu và đuôi xe, trong khi phần thân gần như được giữ nguyên."
+        ],
+        "image": "https://mercedesbenzsaigon.com/wp-content/uploads/2022/08/xehay-GLB-010822-88.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Mercedes-Benz S-Class 2022 nhập Thái về đại lý, giá rẻ hơn 320-370 triệu so với xe nhập Đức",
+        "date": "09/08/2022",
+        "description": [
+            "Mới đây, lô xe Mercedes-Benz S-Class 2022 nhập nguyên chiếc từ Thái Lan đã về tới đại lý, xe có một số thay đổi về giá cũng như trang bị so với bản nhập Đức trước đó."
+        ],
+        "image": "https://mercedesbenzsaigon.com/wp-content/uploads/2022/08/xehay-GLB-010822-88.jpg"
+    }
+]
