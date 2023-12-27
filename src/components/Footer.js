@@ -17,7 +17,7 @@ function Footer() {
                     <div className="footer-box">
                         <h3>Trang</h3>
                         <a href="/">Trang chủ</a>
-                        <a href="/dong-xe">Xe mercedes</a>
+                        <a href="/dong-xe">Xe Mercedes</a>
                         <a href="/bang-gia">Bảng giá</a>
                         <a href="/lien-he">Liên hệ</a>
                     </div>
