@@ -147,7 +147,6 @@ header.shadow #search-icon{
     cursor: pointer;
     color: var(--text-color);
     display: none;
-    display: flex;
     align-items: center;
 }
 
@@ -167,7 +166,8 @@ header.shadow #search-icon{
 .logo span{
     color: var(--bg-color);
     font-size: 1.2rem;
-    /* padding-left: ; */
+    display: flex;
+    align-items: center;
 }
 
 .navbar{
@@ -686,17 +686,22 @@ table {
     }
     .home-text h1 {
       font-size: 2.1rem;
+      
     }
   }
   @media (max-width: 920px) {
     #search-icon {
       color: var(--bg-color);
     }
-    
+    #menu-icon{
+        display: flex;
+    }
   
   }
   @media (max-width: 768px) {
-    
+    .home-text h1 {
+        text-align: start;
+    }
     .search-box input {
       padding: 15px;
     }
@@ -777,15 +782,23 @@ table {
     
   }
   @media (max-width: 727px) {
+    td,th{
+        font-size: small;
+    }
+    td:nth-child(odd),th:nth-child(odd){
+        width: 60%;
+      }
     .heading span {
       font-size: 0.9rem;
     }
     .heading h2 {
       font-size: 1.4rem;
     }
-    .about {
+    .contact-body {
       flex-direction: column-reverse;
+      width: 100%;
     }
+   
     .about-text {
       text-align: center;
     }
@@ -807,7 +820,6 @@ table {
     }
     .home {
       min-height: 500px;
-      background-color: #818181;
     }
     .home-text h1 {
       font-size: 2rem;

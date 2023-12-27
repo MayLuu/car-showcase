@@ -11,7 +11,6 @@ export const Header = () => {
             <Modal show={show} handleClose={() => { setShow(false) }}>
             </Modal>
             <i onClick={() => {
-                console.log('hi');
                 setHidden((prev) => !prev)
             }} className="bx bx-menu" id="menu-icon"></i>
             <a href="/" className="logo"
@@ -20,10 +19,10 @@ export const Header = () => {
                 <span>Mercedes Benz</span>
             </a>
 
-            <div id="mySidenav" style={{ display: hidden ? "block" : "none", width: hidden ? "60%" : "0px", color: "#313131" }} className={`sidenav ${hidden ? '' : 'hidden'}`} >
+            <div id="mySidenav" style={{ display: hidden ? "block" : "none", width: hidden ? "60%" : "0px", backgroundColor: "#313131" }} className={`sidenav ${hidden ? '' : 'hidden'}`} >
                 <a onClick={() => {
                     setHidden(false)
-                }} class="closebtn" onclick="closeNav()" style={{ display: hidden ? "block" : "none", justifyContent: "end", margin: "0 1em", color: "white" }}>&times;</a>
+                }} className="closebtn" style={{ display: hidden ? "block" : "none", justifyContent: "end", margin: "0 1em", color: "white" }}>&times;</a>
                 <li><a href="/">Trang chủ</a></li>
                 <li className="dropdown">
                     <a href="/dong-xe" >Xe Mercedes<i></i></a>
