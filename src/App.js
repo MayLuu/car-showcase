@@ -16,7 +16,7 @@ function App() {
       <header>
         <Header />
         {/* <Breadcrumbs /> */}
-        <a href='tel:0983104636' className="float">
+        <a href='tel:0906383877' className="float">
           <i className="bx bxs-phone-call" style={{ "color": "white" }}></i>
           090.638.38.77
         </a>

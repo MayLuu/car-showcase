@@ -3,10 +3,9 @@ import { NEWS } from '../data';
 import uuid from 'react-uuid';
 
 export const NewsPage = () => {
-
     return (
         <div>
-            <section className="blog" id="blog">
+            <section className="blog section-body" id="blog">
                 <div className="heading">
                     <span style={{ fontSize: "1.2em" }}>Tin tức</span>
                     <h2 className="bold">Những nội dung mới cập nhật gần đây</h2>
@@ -15,7 +14,7 @@ export const NewsPage = () => {
                     </p>
                 </div>
                 {/* <!--Blog Container--> */}
-                <div className="blog-container container">
+                <div className="blog-container container ">
                     {/* <!--Box 1--> */}
                     {
                         NEWS.map(item => {

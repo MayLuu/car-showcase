@@ -1,10 +1,16 @@
 import uuid from "react-uuid";
 import { CATEGORIES, DATA, NEWS } from "../data";
 import { Card } from "../components/Card";
+import { useState } from "react";
+import { Modal } from "../components/Modal";
 
 export const Home = () => {
+    const [show, setShow] = useState(false)
+
     return (
         <>
+            <Modal show={show} handleClose={() => { setShow(false) }}>
+            </Modal>
             <section className="home" id="home">
                 <div className="home-text">
                     <div className="box">
@@ -20,7 +26,7 @@ export const Home = () => {
                             Mercedes-Benz Haxaco Hồ Chí Minh có trụ sở chính tọa lạc tại Số 6 đường 3/2 P.15, Q.11, Thành phố Hồ Chí Minh. Chúng tôi luôn cam kết mang đến sự hài lòng nhất tới Quý Khách Hàng bằng những Ưu Đãi & Hậu Mãi của sản phẩm theo tiêu chí 5 sao. Sẽ mang đến sự trải nghiệm hoàn toàn mới tới Quý Khách Hàng.
                         </p>
                         {/* <!--home Button--> */}
-                        <a href="/" className="btn">+ 098 7654 321</a>
+                        <a href='tel:0906383877' className="btn">Hotline: 090.638.38.77</a>
                     </div>
                 </div>
             </section>
@@ -66,10 +72,10 @@ export const Home = () => {
                             Dịch vụ hậu mãi: thứ Hai-thứ Sáu – 8h-17h
                         </p>
                         {/* <!--About Button--> */}
-                        <a href="/" className="btn">Tìm hiểu thêm</a>
+                        <a onClick={() => setShow(true)} className="btn">Tìm hiểu thêm</a>
                     </div>
                 </section>
-            </section >
+            </section>
             {/* <!--parts section--> */}
             <section section className="parts" id="parts" >
                 <div className="heading">
@@ -95,7 +101,7 @@ export const Home = () => {
 
 
                 </div>
-            </section >
+            </section>
             {/* <!--Blog Container--> */}
             <section section className="blog" id="blog" >
                 <div className="heading">
@@ -117,7 +123,7 @@ export const Home = () => {
                                 <p >
                                     {item.description[0]}
                                 </p>
-                                <a href="/" className="blog-btn">Xem thêm<i className="bx bx-right-arrow-alt"></i>
+                                <a onClick={() => setShow(true)} className="blog-btn">Xem thêm<i className="bx bx-right-arrow-alt"></i>
                                 </a>
                             </div>
                         })

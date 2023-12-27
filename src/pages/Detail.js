@@ -5,19 +5,23 @@ import 'react-tabs/style/react-tabs.css';
 import { DATA } from "../data"
 
 
-import React from "react";
+import React, { useState } from "react";
 import uuid from "react-uuid";
 import { Carousel } from "../components/Carousel";
 import { Card } from "../components/Card";
+import { Modal } from "../components/Modal";
 
 export const DetailPage = () => {
     const params = useParams()
     const item = DATA.filter(i => i.name.replace(' ', '-') === params.id)[0]
+    const [show, setShow] = useState(false)
 
 
 
     return (
         <section className="home">
+            <Modal show={show} handleClose={() => { setShow(false) }}>
+            </Modal>
             <div className="container">
                 <div className="title">{item.name}</div>
                 <div className="detail">
@@ -29,13 +33,14 @@ export const DetailPage = () => {
                         <h1 className="name">{item.name}</h1>
                         <div className="price">Giá: {item.price} đ</div>
                         <div className="buttons">
-                            <button>Liên hệ</button>
-                            <button>Mua ngay
-                                <span>
-                                    <svg className="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
-                                    </svg>
-                                </span>
+                            <button onClick={() => {
+                                setShow(true)
+                            }}>Liên hệ</button>
+                            <button onClick={() => {
+                                setShow(true)
+                            }}>Mua ngay
+                                <i style={{ color: "white", paddingLeft: "2px" }} class='bx bx-cart-add' ></i>
+
                             </button>
                         </div>
                         <div className="description">
