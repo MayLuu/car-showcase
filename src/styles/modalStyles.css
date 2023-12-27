@@ -48,4 +48,9 @@
     .modal-main{
         width:90%;
     }
+    .close-btn{
+      top: 1rem;
+      right: 2rem;
+    }
+    
   }

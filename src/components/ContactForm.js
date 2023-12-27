@@ -21,14 +21,12 @@ export default function ContactForm() {
 
         emailjs.sendForm('service_wq3krmc', 'template_1yk657s', form.current, 'HEUPCMiwdjgkSkNNB')
             .then((result) => {
-                console.log(result.text);
                 setName('');
                 setPhone('');
                 notify();
                 setLoading(false);
 
             }, (error) => {
-                console.log(error.text);
                 setLoading(false);
 
             });

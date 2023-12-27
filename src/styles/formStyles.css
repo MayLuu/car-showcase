@@ -53,3 +53,13 @@ input[type=text], select {
   
   
 
+  @media (max-width: 727px) {
+
+    form{
+        width: 85%;
+    }
+    label{
+        display: block;
+        text-align: start;
+      }
+  }
