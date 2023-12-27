@@ -276,7 +276,7 @@ color:var(--text-color);
 }
 
 .home-text{
-    padding-left: 130px;
+    padding:0 130px;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -284,6 +284,7 @@ color:var(--text-color);
 
 .home-text .box h1{
     font-size: 2.4rem;
+    text-align: justify;
 }
 
 
