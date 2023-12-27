@@ -10,7 +10,7 @@ export const NewsPage = () => {
                     <span style={{ fontSize: "1.2em" }}>Tin tức</span>
                     <h2 className="bold">Những nội dung mới cập nhật gần đây</h2>
                     <p>
-                        Theo dõi chúng tôi để cập nhật nhwnxng tin tức mới nhất về dòng xe Mercedes Benz cùng những ưu đãi khác
+                        Theo dõi chúng tôi để cập nhật những tin tức mới nhất về dòng xe Mercedes Benz cùng những ưu đãi khác
                     </p>
                 </div>
                 {/* <!--Blog Container--> */}

@@ -50,8 +50,7 @@ input[type=text], select {
   input[type=submit]:hover {
     opacity: 0.9;
   }
-  
-  
+
 
   @media (max-width: 727px) {
 

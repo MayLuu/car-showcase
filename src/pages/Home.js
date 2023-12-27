@@ -33,9 +33,9 @@ export const Home = () => {
             {/* <!--cars section--> */}
             <section className="cars" id="cars">
                 <div className="heading">
-                    <span style={{ fontSize: "1.2em" }}>Các dòng xe</span>
+                    <span style={{ fontSize: "1.2em" }} className="p-1">Các dòng xe</span>
                     <h2 className="bold">Đầy đủ các dòng xe sang, hiện đại</h2>
-                    <p className="txt">
+                    <p className="txt p-1">
                         Chúng tôi luôn đặt mong muốn của quý khách lên hàng đầu
                     </p>
                 </div>
@@ -54,11 +54,10 @@ export const Home = () => {
                 </div>
             </section >
 
-            {/* <!--About--> */}
             <section section >
                 <section className="about container" id="about">
                     <div className="about-img">
-                        <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/328513211_515078427179217_3835672575713190716_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=CpJPiYIgHIgAX_eqFFM&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfAzxEhAQQIvbsbRzKCPvsnM-Nd7ECu5ORDOWDdPdpJs-Q&oe=658FB25C" alt="" />
+                        <img src="https://mercedes-saigon.com.vn/quannguyenphat/uploads/2021/12/khuyen-mai-mercedes-benz.jpg.webp" alt="" />
                     </div>
                     <div className="about-text">
                         <span style={{ fontSize: "1.2em" }}>Về chúng tôi</span>
@@ -79,9 +78,9 @@ export const Home = () => {
             {/* <!--parts section--> */}
             <section section className="parts" id="parts" >
                 <div className="heading">
-                    <span style={{ fontSize: "1.2em" }} >Được mua nhiều</span>
+                    <span className="p-1" style={{ fontSize: "1.2em" }} >Được mua nhiều</span>
                     <h2 className="bold">Những dòng xe bán chạy nhất hãng</h2>
-                    <p className="txt">
+                    <p className="txt p-1">
                         Khách hàng liên hệ trực tiếp với MErcedes sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng cùng gói quà tặng bảo hiểm. phụ kiện cao cấp.
                     </p>
                 </div>

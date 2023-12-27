@@ -1,18 +1,19 @@
 .close-btn{
+  
     border: none;
     background-color: transparent;
     position: absolute;
-    right: 3em;
-    /* transform: translate(-50%,-50%); */
-    /* padding: 1em 1.2em; */
-    
+    right: 1em;
+    background-color: rgb(78, 76, 76);
+    transform: translate(-50%,-80%);
+    padding: 0.8em 1em;
+    border-radius: 4px;
+    color: white;
 
 
 }
 .close-btn:hover{
-    background-color: rgb(146, 140, 140);
-    border-radius: 10%;
-    color: aliceblue;
+    color: red;
 }
 
 .modal {
@@ -43,14 +44,34 @@
     display: none;
   }
 
+  
+  @media (max-width: 1500px) {
+
+    .modal-main{
+        width:30%;
+    }
+   
+    
+  }
+
+  @media (max-width: 1080px) {
+
+    .modal-main{
+        width:60%;
+    }
+   
+    
+  }
   @media (max-width: 768px) {
 
     .modal-main{
         width:90%;
     }
     .close-btn{
-      top: 1rem;
-      right: 2rem;
+      /* right: 2rem; */
+      transform: translate(-10%,-80%);
+
     }
+    
     
   }

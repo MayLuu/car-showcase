@@ -50,7 +50,7 @@ export const DetailPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="info">
+                <div className="info" style={{ marginTop: "1em" }}>
                     <div className="box">
                         <div className="title">Giới thiệu</div>
                         <div className="description">
