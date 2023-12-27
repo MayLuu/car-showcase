@@ -802,10 +802,7 @@ table {
     .heading h2 {
       font-size: 1.4rem;
     }
-    .contact-body {
-      flex-direction: column-reverse;
-      width: 100%;
-    }
+    
    
     .about-text {
       text-align: center;
@@ -815,6 +812,11 @@ table {
     }
   }
   @media (max-width: 607px) {
+    .contact-body {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: max-content;
+      }
     .footer-container {
       display: grid;
       grid-template-columns: 1fr;
@@ -823,6 +825,7 @@ table {
     }
   }
   @media (max-width: 360px) {
+    
     .search-box input {
       padding: 11px;
     }
