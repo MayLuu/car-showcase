@@ -33,9 +33,9 @@ function Footer() {
 
                     <div className="footer-box">
                         <h3>Liên hệ</h3>
-                        <a href='tel:0906383877' >Hotline: 0906 38 38 77</a>
-                        <p>Email: mercedes-benz-vietnam@mercedes-benz.com</p>
-                        <a target="_blank" href="https://mercedes-vietnamstar.com.vn">Website: mercedes-vietnamstar.com.vn</a>
+                        <a href='tel:0937965577' >Hotline: 0937 96 55 77</a>
+                        <p>Email: mercedes.hax.vovankiet@gmail.com</p>
+                        <a target="_blank" href="https://mercedes.net">Website: mercedesvn.net</a>
                     </div>
                 </div>
             </section >

@@ -18,15 +18,14 @@ export const Home = () => {
                     </div>
                     <div className="box">
                         <h1 >
-                            Hãy liên hệ với chúng tôi <br />
-                            Mercedes Sài Gòn
+                            Hãy liên hệ với chúng tôi Mercedes Haxaco Võ Văn Kiệt
                         </h1>
 
                         <p className="txt">
-                            Mercedes-Benz Haxaco Hồ Chí Minh có trụ sở chính tọa lạc tại Số 6 đường 3/2 P.15, Q.11, Thành phố Hồ Chí Minh. Chúng tôi luôn cam kết mang đến sự hài lòng nhất tới Quý Khách Hàng bằng những Ưu Đãi & Hậu Mãi của sản phẩm theo tiêu chí 5 sao. Sẽ mang đến sự trải nghiệm hoàn toàn mới tới Quý Khách Hàng.
+                            Mercedes Haxaco Võ Văn Kiệt có trụ sở tọa lạc tại 2008 Võ Văn Kiệt, Phường An Lạc, Quận Bình Tân, Thành phố Hồ Chí Minh. Chúng tôi luôn cam kết mang đến sự hài lòng nhất tới Quý Khách Hàng bằng những Ưu Đãi & Hậu Mãi của sản phẩm theo tiêu chí 5 sao. Sẽ mang đến sự trải nghiệm hoàn toàn mới tới Quý Khách Hàng.
                         </p>
                         {/* <!--home Button--> */}
-                        <a href='tel:0906383877' className="btn">Hotline: 090.638.38.77</a>
+                        <a href='tel:0937965577' className="btn">Hotline: 0937.96.55.77</a>
                     </div>
                 </div>
             </section>
@@ -52,12 +51,12 @@ export const Home = () => {
 
 
                 </div>
-            </section >
+            </section>
 
             <section section >
                 <section className="about container" id="about">
                     <div className="about-img">
-                        <img src="https://mercedes-saigon.com.vn/quannguyenphat/uploads/2021/12/khuyen-mai-mercedes-benz.jpg.webp" alt="" />
+                        <img src="img/banner.jpg" alt="" />
                     </div>
                     <div className="about-text">
                         <span style={{ fontSize: "1.2em" }}>Về chúng tôi</span>
@@ -68,7 +67,6 @@ export const Home = () => {
                         <p>
                             Dịch vụ hỗ trợ 24h (Star Assist 24h) <br />
                             Mua xe & lái thử xe: thứ Hai-thứ Bảy – 8h-22h  <br />
-                            Dịch vụ hậu mãi: thứ Hai-thứ Sáu – 8h-17h
                         </p>
                         {/* <!--About Button--> */}
                         <a onClick={() => setShow(true)} className="btn">Tìm hiểu thêm</a>
@@ -81,7 +79,7 @@ export const Home = () => {
                     <span className="p-1" style={{ fontSize: "1.2em" }} >Được mua nhiều</span>
                     <h2 className="bold">Những dòng xe bán chạy nhất hãng</h2>
                     <p className="txt p-1">
-                        Khách hàng liên hệ trực tiếp với MErcedes sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng cùng gói quà tặng bảo hiểm. phụ kiện cao cấp.
+                        Khách hàng liên hệ trực tiếp với Mercedes-Benz Haxaco sẽ nhận ưu đãi tiền mặt đến hàng trăm triệu đồng <br />cùng gói quà tặng bảo hiểm, phụ kiện cao cấp.
                     </p>
                 </div>
                 {/* <!--parts container--> */}
@@ -105,8 +103,8 @@ export const Home = () => {
             <section section className="blog" id="blog" >
                 <div className="heading">
                     <span style={{ fontSize: "1.2em" }}>Tin tức</span>
-                    <h2 className="bold">Những nội dung mới cập nhật gần đây</h2>
-                    <p className="txt">
+                    <h2 className="bold p-1">Những nội dung mới cập nhật gần đây</h2>
+                    <p className="txt p-1">
                         Theo dõi chúng tôi để cập nhật những tin tức mới nhất về dòng xe Mercedes Benz cùng những ưu đãi khác
                     </p>
                 </div>
